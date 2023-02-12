@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    border:1px solid black;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 5px;
+    
+}
+
+header>div>a>img{
+
+    height: 50px;
+    width: auto;
+}
+footer>div>a>img{
+    height: 30px;
+    width: auto;
+}
+
+button{
+    border:none;
+    padding: 10px;
+    background: none;
+}

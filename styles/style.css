@@ -27,3 +27,14 @@ button{
     padding: 10px;
     background: none;
 }
+
+
+.imgcard{
+    width: 32%;
+    height: auto;
+    
+}
+.textcard{
+    width: 64%;
+    height: auto;
+}

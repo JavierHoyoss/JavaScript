@@ -9,7 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="container">
@@ -17,8 +20,7 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/Logo Amazing Events.png" alt="Logo" width="auto" height="40"
-                        class="d-inline-block align-text-top">
+                    <img src="assets/Logo_Amazing_Events.png" alt="logo" class="d-inline-block align-text-top">
                 </a>
                 <div class="nav justify-content-end">
                     <a class="nav-link" href="#">Home</a>
@@ -31,13 +33,13 @@
             </div>
         </nav>
         <div class="d-flex justify-content-between">
-            <a href="/stats.html"><img src="assets/arrow-left.svg"></a>
+            <a href="/stats.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
             <h1> Home </h1>
-            <a href="/upcoming_event.html"><img src="assets/arrow-right.svg"></a>
+            <a href="/upcoming_event.html"><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
         </div>
         <form>
             <fieldset class="row">
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 fs-5">
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                         <label class="form-check-label" for="inlineCheckbox1">Category</label>
@@ -63,69 +65,67 @@
                     <label class="search">
                         <input type="search" name="search">
                     </label>
-                    <button type="submit"><img src="/assets/search.svg"></button>
+                    <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </fieldset>
         </form>
     </header>
-    <main class="container text-center mt-5">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 m-1">
-                <div class="card" >
-                    <img src="/assets/Cinema.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Texto descriptivo</p>
-                        <p>Price $0000</p>
-                        <a href="#" class="btn btn-primary">Ver más...</a>
-                    </div>
+    <main>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="cardimg">
+                    <img src="/assets/rojo.png" alt="">
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 m-1">
-                <div class="card " >
-                    <img src="/assets/Cinema.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Texto descriptivo</p>
-                        <p>Price $0000</p>
-                        <a href="#" class="btn btn-primary">Ver más...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 m-1">
-                <div class="card" >
-                    <img src="/assets/Cinema.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Texto descriptivo</p>
-                        <p>Price $0000</p>
-                        <a href="#" class="btn btn-primary">Ver más...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 m-1">
                 <div class="card">
-                    <img src="/assets/Cinema.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Titulo</h5>
-                        <p class="card-text">Texto descriptivo</p>
-                        <p>Price $0000</p>
-                        <a href="#" class="btn btn-primary">Ver más...</a>
+                    <div class="cardtitulo">Featured title</div>
+                    <div class="cardtxt">
+                        <p> Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
+                        <a href="#">link </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cardimg">
+                    <img src="/assets/negro.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="cardtitulo">Featured title</div>
+                    <div class="cardtxt">
+                        <p> Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words.</p>
+                        <a href="#">link </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cardimg">
+                    <img src="/assets/verde.png" alt="">
+                </div>
+                <div class="card">
+                    <div class="cardtitulo">Featured title</div>
+                    <div class="cardtxt">
+                        <p> Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
+                            sentence and probably just keep going until we run out of words. </p>
+                        <a href="#">link </a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <footer class="d-flex justify-content-between mt-5">
-            <div class="nav justify-content-start">
-                <a href="https://es-la.facebook.com/"><img src="assets/facebook.svg"></a>
-                <a href="https://www.instagram.com/"><img src="assets/instagram.svg"></a>
-                <a href="https://www.youtube.com/"><img src="assets/youtube.svg"></a>
+        <footer>
+            <div class="superior">
+                <div class="left">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="right">
+                    <h2>Cohort</h2>
+                </div>
             </div>
-            <div class="nav justify-content-end">
-                <h2>Cohort</h2>
+            <div class="inferior">
+                <small>&copy; 2023 <b>Cohort</b> - Todos los Derechos Reservados.</small>
             </div>
-
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

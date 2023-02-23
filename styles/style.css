@@ -1,42 +1,252 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.nav-link{
-    border:1px solid black;
+.nav-link {
+    border: 1px solid black;
     border-radius: 3px;
     padding: 10px 20px;
     margin: 5px;
-    
+    font-size: 1.1rem;
+
 }
 
-header>div>a>img{
+header img {
 
-    height: 50px;
-    width: auto;
-}
-footer>div>a>img{
-    height: 30px;
+    height:40px;
     width: auto;
 }
 
-button{
-    border:none;
+header i{
+    font-size: 3rem;
+}
+
+fieldset i{
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
     padding: 10px;
     background: none;
 }
 
-.imgcard{
-    width: 32%;
-    height: auto;
-    
-}
-.textcard{
-    width: 64%;
-    height: auto;
+.tarjetas {
+    width: 100%;
+    max-width: 1200px;
+    /* height: 430px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 }
 
-@media only screen and (max-width:768px){
+.tarjeta {
+    /* border: 3px solid black; */
+    width: 330px;
+    /* height: 430px; */
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.tarjetas .tarjeta:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardimg {
+    /* border: 3px solid black; */
+    width: 330px;
+    height: 220px;
+}
+
+.cardimg>img {
+    width: 330px;
+    height: 220px;
+}
+
+.cardtitulo {
+    margin-top: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.cardtxt {
+    margin-top: 30px;
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cardtxt>a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.superior {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.superior i {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+.superior h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.inferior {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.details{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carddet{
+    width: 1000px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+}
+
+.container .carddet:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.leftcolumn{    
+    width: 380px;
+    height: 350px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+figure img{
+    width: 100%;
+    height: 290px;
+    margin-bottom: 8px;
+}
+
+
+.rightcolumn{   
+    width: 580px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.rightcolumn h2{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.rightcolumn p{
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+}
+
+.button{
+    background-color: rgb(175, 228, 210);
+    letter-spacing: 2px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    align-self: end;
+}
+
+.button:hover{
+    background-color: rgb(27, 77, 60);
+    color: white;
+}
+
+@media (max-width: 480px) {
+	.carddet{
+        flex-wrap: wrap;
+        height: 700px;		
+	}
+    .leftcolumn, .rightcolumn{
+        width: 100%;
+        height: 250px;
+    }
+    .rightcolumn{
+        padding: 5px;
+    }
+    .button{
+        align-self: center;
+        width: 100%;
+    }
+  }
+
+@media (max-width: 650px) {
+    footer {
+        flex-wrap: wrap;
+
+    }
+
+    .superior {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .right {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .inferior {
+        width: 100%;
+        text-align: center;
+        margin-top: 70px;
+    }
 }

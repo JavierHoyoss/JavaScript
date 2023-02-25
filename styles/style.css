@@ -5,7 +5,6 @@
 }
 
 .nav-link {
-    border: 1px solid black;
     border-radius: 3px;
     padding: 10px 20px;
     margin: 5px;
@@ -79,21 +78,20 @@ button {
 
 .cardtxt {
     margin-top: 30px;
-    padding: 0 1rem;
+    padding: 0rem 1rem;
     font-size: 16px;
     font-weight: 300;
 }
 
 .cardtxt>a {
     font-weight: 500;
+    font-size: 20px ;
     text-decoration: none;
     color: #3498db;
+    padding: 10px;
 }
 
-footer {
-    padding-left: 50px;
-    padding-right: 50px;
-}
+
 
 .superior {
     width: 100%;

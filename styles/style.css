@@ -201,7 +201,7 @@ figure img{
     color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 770px) {
 	.carddet{
         flex-wrap: wrap;
         height: 700px;		

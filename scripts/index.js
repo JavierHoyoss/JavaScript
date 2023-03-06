@@ -73,7 +73,7 @@ const filtrar = () => {
       const p2 = document.createElement("p");
       p2.innerHTML = "<b>Price:</b> $" + item.price + "<br> <b>Place: </b>" + item.place;
       const link = document.createElement("a");
-      link.href = "./details.html";
+      link.href = `./details.html?id=${item._id}`;
       link.textContent = "Details";
       link.dataset.id = item._id;
 

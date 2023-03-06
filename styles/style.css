@@ -14,16 +14,37 @@
 
 header img {
 
-    height:40px;
+    height: 40px;
     width: auto;
 }
 
-header i{
+header i {
     font-size: 3rem;
 }
 
-fieldset i{
+fieldset i {
     font-size: 1.5rem;
+}
+
+fieldset input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.buscar{
+    width: 33%;
+    display: flex;
+    align-items: center;
 }
 
 button {
@@ -85,7 +106,7 @@ button {
 
 .cardtxt>a {
     font-weight: 500;
-    font-size: 20px ;
+    font-size: 20px;
     text-decoration: none;
     color: #3498db;
     padding: 10px;
@@ -123,7 +144,9 @@ button {
 }
 
 
-.details{
+.details {
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -132,7 +155,8 @@ button {
     align-items: center;
 }
 
-.carddet{
+.carddet {
+
     width: 1000px;
     height: 350px;
     border-radius: 8px;
@@ -142,12 +166,12 @@ button {
     display: flex;
 }
 
-.container .carddet:hover{
+.container .carddet:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.leftcolumn{    
+.leftcolumn {
     width: 380px;
     height: 350px;
     font-size: 1.5rem;
@@ -160,14 +184,14 @@ button {
     text-align: center;
 }
 
-figure img{
+figure img {
     width: 100%;
     height: 290px;
     margin-bottom: 8px;
 }
 
 
-.rightcolumn{   
+.rightcolumn {
     width: 580px;
     padding: 25px;
     display: flex;
@@ -176,17 +200,17 @@ figure img{
     justify-content: space-around;
 }
 
-.rightcolumn h2{
+.rightcolumn h2 {
     font-size: 2.5rem;
     letter-spacing: 2px;
 }
 
-.rightcolumn p{
+.rightcolumn p {
     font-size: 1.2rem;
     letter-spacing: 1.5px;
 }
 
-.button{
+.button {
     background-color: rgb(175, 228, 210);
     letter-spacing: 2px;
     padding: 6px 12px;
@@ -196,30 +220,56 @@ figure img{
     align-self: end;
 }
 
-.button:hover{
+.button:hover {
     background-color: rgb(27, 77, 60);
     color: white;
 }
 
 @media (max-width: 770px) {
-	.carddet{
+    .buscar{
+        width: 100%;
+    }
+    .search{
+        width: 90%;
+    }
+    #search{
+        width: 100%;
+    }
+    .carddet {
+        margin-top: 30px;
         flex-wrap: wrap;
-        height: 700px;		
-	}
-    .leftcolumn, .rightcolumn{
+        height: 700px;
+    }
+
+    .leftcolumn,
+    .rightcolumn {
         width: 100%;
         height: 250px;
+
     }
-    .rightcolumn{
+
+    .rightcolumn {
+        text-align: center;
         padding: 5px;
+        align-items: center;
     }
-    .button{
+
+    .button {
         align-self: center;
         width: 100%;
     }
-  }
+}
 
 @media (max-width: 650px) {
+
+    .checkboxes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+}
     footer {
         flex-wrap: wrap;
 
@@ -247,4 +297,3 @@ figure img{
         text-align: center;
         margin-top: 70px;
     }
-}
